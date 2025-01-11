@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('weather.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+  }
+  /* Change the theme toggle button icon color to blue */
+#theme-toggle i {
+    color: #63c7f5;  /* This sets the icon color to blue */
+  }
+  
+  #theme-toggle:hover i {
+    color: #63c7f5;  /* Optional: Change icon color when hovered */
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #63c7f5;
+  }
+  
+  header button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  header button:hover {
+    color: #63c7f5;
+  }
+  
+  .search-section {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .search-section input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #63c7f5;
+  }
+  
+  .search-section button {
+    background: #63c7f5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-section button:hover {
+    background: #63c7f5;
+  }
+  
+  .weather-info {
+    margin: 20px 0;
+  }
+  
+  .weather-info h2 {
+    font-size: 1.5rem;
+    color: #63c7f5;
+  }
+  
+  .weather-info #weather-details {
+    margin-top: 10px;
+  }
+  
+  .weather-info .placeholder {
+    font-style: italic;
+    color: #bbb;
+  }
+  
+  button#refresh-btn {
+    background: #63c7f5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button#refresh-btn:hover {
+    background: #63c7f5;
+  }
+  
+  .forecast {
+    margin-top: 20px;
+  }
+  
+  .forecast h3 {
+    font-size: 1.2rem;
+    color: #63c7f5;
+  }
+  
+  .forecast-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .forecast-card {
+    background: #63c7f5;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .forecast-card p {
+    margin: 5px 0;
+  }
+  
+  #map {
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .news {
+    margin-top: 20px;
+  }
+  
+  .news h3 {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .news div {
+    color: #ddd;
+    font-size: 0.9rem;
+  }
+  
+  /* Light Mode */
+  body.light-mode {
+    background-color: #63c7f5;
+    color: #333;
+  }
+  
+  body.light-mode .container {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  body.light-mode header h1 {
+    color: #63c7f5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .search-section {
+      flex-direction: column;
+    }
+  
+    .search-section input, .search-section button {
+      width: 100%;
+    }
+  }
+  
